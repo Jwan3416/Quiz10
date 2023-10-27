@@ -4,7 +4,7 @@ var particles = [];
 var img;
 var g = 0;
 var b = 0;
-var cycleDuration = 20000; // 循环的持续时间，单位为毫秒
+var cycleDuration = 20000; // 
 
 
 function preload() {
@@ -33,7 +33,7 @@ function draw() {
     
     image(img,0,0,width+100,height+100);
     
-    var time = millis() % cycleDuration; // 获取当前时间的模，用于控制循环
+    var time = millis() % cycleDuration; // 
     if (time < cycleDuration / 2) {
         g = map(time, 0, cycleDuration / 2, 0, 255); // 从0增加到255
         b = map(time, cycleDuration / 2, cycleDuration, 255, 0);
